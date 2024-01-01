@@ -1,0 +1,33 @@
+.row .col-4 .list-group .list-group-item.list-group-item-action{ 
+    background-color: rgba(84, 87, 100, 0.6);
+    padding: 0.5em;
+    border-width: 3px;
+    color: rgb(213, 213, 255);
+
+    margin: 5px;
+
+ }
+ 
+ .row .col-8 .card-header{
+    font-family: 'TAEBAEKmilkyway';
+    color: black;
+    background-color: whitesmoke;
+ }
+
+.row .col-8 .card-body{
+    color:black
+}
+ .myBtn{
+    color: white;
+    border-radius: 5px;
+    background-color:rgba(46, 63, 107, 1);
+    border: none;
+    width: 120px;
+    height: 40px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+ }
+ .myBtn:hover{
+    cursor: pointer;
+    transition: all;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+ }

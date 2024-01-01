@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+<!-- 질문게시판 - 질문 등록 페이지-->
+
+{% block content %}
+<form method="POST" class="post-form my-3 question_head">
+    <h3 class = "my-3 border-bottom pb-2">질문 등록</h3>
+    <hr>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type = "submit" class = "btn btn-secondary">저장하기</button>
+</form>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %} history {% endblock %}
+
+{% block content %}
+<div class="history_log">
+  <div class="card" style="width: 18rem;, height: 30rem; margin-right: 20px;">
+    <div class="card-body">
+      <p class="card-text">{{user.nickname}}님</p>
+    </div>
+  </div>
+</div>
+  <br><br>
+    <div class="card-group">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">평균 수면 시간</h5>
+          <p class="card-text">{% if average_time_diff %}
+            {{ average_time_diff.0 }} 시간 {{ average_time_diff.1 }} 분
+          {% else %}
+            No data
+          {% endif %}</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">목표 수면 시간</h5>
+          <p class="card-text"> {{ user.target_sleep|date:"G 시간" }}  </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">권장 수면 시간</h5>
+          <p class="card-text">8시간</p>
+        </div>
+      </div>
+    </div>
+  <div>
+<br>
+<br>
+<h2 class="history_heading">&nbsp;&nbsp;<i class="fa-solid fa-circle-user fa-fade"></i>&nbsp;&nbsp;히스토리</h2>
+{% if user_history %}
+    {% for history in user_history %}<br>
+        <strong class="history_heading">{{history.date}}</strong><br><br>
+        <span class="history_heading">취침시간 : {{ history.sleep_time }}</span><br>
+        <span class="history_heading">기상시간 :{{ history.awake_time }}</span><br>
+        <span class="history_heading">체크리스트 : {{ list }}</span><br>
+        <br>
+        <a href="{% url 'history:delete_history' history.id %}" class = "btn btn-secondary">삭제</a>
+        <br><br>
+    {% endfor %}
+<br><br><br>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+#history_list {
+    padding: 10px;
+    font-family: 'TAEBAEKmilkyway';
+    letter-spacing: 0.7px;
+    background-color: rgba(84, 87, 100, 0.6);
+    border-radius: 0.5em;
+    line-height: 2em;
+    width: 635px;
+}
+
+.font {
+    font-family: 'TAEBAEKmilkyway';
+}
+
+.history_heading {
+    padding: 10px;
+    font-family: 'TAEBAEKmilkyway';
+    color: white;
+    letter-spacing: 0.7px;
+    background-color: rgba(84, 87, 100, 0.6);
+    border-radius: 0.5em;
+    line-height: 2em;
+    width: 635px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.history_log .card .card-body{
+    background-color: rgba(84, 87, 100, 0.6);
+    padding: 0.2em;
+   
+}
+
+.history_log .card .card-body .card-text{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(213, 213, 255);
+    
+}
+
+.card-group .card .card-body{
+    background-color: rgba(84, 87, 100, 0.6);
+    font-size: 50px;
+    text-align: center;
+    font-family: 'TAEBAEKmilkyway';
+    color: rgb(213, 213, 255);
+}
+.card-group .card .card-body .card-title{
+    color: white;
+    font-size: 30px;
+}

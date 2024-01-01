@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title%} 🤔질문게시판 {% endblock %}
+
+{% block content %}
+<h1 class="community_2">&nbsp;&nbsp;<i class="fa-solid fa-bell fa-fade"></i>&nbsp;&nbsp;질문게시판</h1>
+
+{% if question_list%}
+<div class = "container my-3">
+    <table class="table caption-top">
+        <caption>List of users</caption>
+        <thead>
+            <tr class="text-center" thead-dark>
+                <th scope="col">NUM</th>
+                <th scope="col" style = "width:50%">제목</th>
+                <th scope="col">작성자</th>
+                <th scope="col">작성일시</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for question in question_list %}
+                <tr class ="text-center">
+                    <td>{{ forloop.counter }}</td>
+                    <td class = "text-left"><a href="{% url 'community:community_2_detail' question.id %}">{{ question.subject}}</a></td>
+                    <td>{{question.author.nickname}}</td>
+                    <td> {{ question.create_date }}</td>
+                </tr>
+            {% endfor %}
+  {% else %}
+    <p>질문이 없습니다.</p>
+{% endif %}
+    </table>
+    <a href="{% url 'community:question_create_2' %}" class ="btn btn-secondary">
+        질문 등록
+    </a>
+</div>
+{% endblock %}

@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MapoGoldenPier';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 오늘 하루도 수고하셨습니다 */
+#home-title {
+    font-family: 'TAEBAEKmilkyway';
+    font-size: 50px;
+    text-align: center;
+}
+
+/* 시간 입력창 */
+.card-title {
+    font-family: 'TAEBAEKmilkyway';
+}
+.card-body {
+    background-color: rgba(130, 148, 206, 0.6);
+}
+
+/* 수면 체크리스트 */
+h3 {
+    padding: 12px;
+    border-radius: 0.5em;
+    font-family: 'TAEBAEKmilkyway';
+}
+
+/* 체크리스트 폼 */
+#form-checklist {
+    padding: 10px;
+    font-family: 'TAEBAEKmilkyway';
+    letter-spacing: 0.7px;
+    background-color: rgba(84, 87, 100, 0.6);
+    border-radius: 0.5em;
+    line-height: 2em;
+    width: 635px;
+}
+
+.smallcard {
+    padding: 10px;
+    font-family: 'TAEBAEKmilkyway';
+    letter-spacing: 0.7px;
+    background-color: rgba(84, 87, 100, 0.6);
+    border-radius: 0.5em;
+    line-height: 2em;
+    width: 635px;
+}
+
+#history-list {
+    padding: 10px;
+    font-family: 'TAEBAEKmilkyway';
+    letter-spacing: 0.7px;
+    background-color: rgba(84, 87, 100, 0.6);
+    border-radius: 0.5em;
+    line-height: 2em;
+    width: 635px;
+}

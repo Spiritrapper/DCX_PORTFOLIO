@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block title%} Welcome to Deepsleep {% endblock %}
+
+{% block content %}
+
+<!-- 만약 history를 제출했다면 -> 크롤링 -->
+{% if title_1 %}
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="{{link_1}}" target="_blank"><img src="{{image_1}}" class="d-block w-100" alt="..."></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{title_1}}</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="{{link_2}}" target="_blank"><img src="{{image_2}}" class="d-block w-100" alt="..."></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{title_2}}</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="{{link_3}}" target="_blank"><img src="{{image_3}}" class="d-block w-100" alt="..."></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{title_3}}</h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+
+{% else %}
+<form name = "start" method="POST" action ="{% url 'home:home'%}">
+  {% csrf_token %}
+  <h1 class = "text-light" id="home-title">오늘 하루도 수고하셨습니다&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-moon fa-bounce" style="color: #ffffff;"></i></h1>
+<br>
+<br>
+<!-- 시간 입력란 -->
+<div class="row ">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card ">
+      <div class="card-body justify-content-between">
+        <h5 class="card-title">취침시간</h5>
+        <p class="card-text"><input type='time' name = "sleep_time"></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body justify-content-between">
+        <h5 class="card-title">기상시간 </h5>
+        <p class="card-text"><input type='time' name = "awake_time"></p>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<!-- 수면 체크리스트 -->
+<div class = "text-light">
+<h3>수면 체크리스트</h3>
+<br>
+
+<div class="form-check" id="form-checklist">
+  {% for i in checklist %}
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="category" value="{{ forloop.counter }}">
+    <label class="form-check-label">
+      {{ i }}
+    </label>
+  </div>
+  {% endfor %}
+</div>
+<br>
+<button type="submit" class="btn btn-secondary text-white">Send to history</button>
+</form>
+
+{% endif %}
+{% endblock  %}

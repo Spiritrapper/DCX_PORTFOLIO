@@ -1,0 +1,9 @@
+<!-- display_data.html -->
+{% for data in crawled_data %}
+    <h2>{{ data.title }}</h2>
+    <p>{{ data.link.read }}</p>
+    <p>{{ data.img_link.read }}</p>
+    {% if data.image_file %}
+        <img src="{{ data.img_link.url }}" alt="Image">
+    {% endif %}
+{% endfor %}

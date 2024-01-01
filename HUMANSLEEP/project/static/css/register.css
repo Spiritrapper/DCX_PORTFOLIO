@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KBO-Dia-Gothic_bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+#register_page {
+    background-color: rgba(29, 38, 84, 0.6);
+    padding: 4em;
+    border-radius: 3em;
+    width: 700px;
+    font-family: 'TAEBAEKmilkyway';
+}
+
+.text-center {
+    color:whitesmoke;
+    font-family: 'Sleeping', sans-serif;
+}
+
+#register_button {
+    background-color:rgba(46, 63, 107, 1);
+    border: none;
+    width: 120px;
+    height: 40px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    font-family: KBO-Dia-Gothic_bold;
+}
+#register_button:hover {
+    cursor: pointer;
+    transition: all;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}

@@ -1,0 +1,41 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title%}📕수면 저널 {% endblock %}
+
+{% block content %}
+<script src="{% static 'js/community_3.js' %}"></script>
+
+<div class="row">
+  <div class="col-4">
+    <div id="list-example" class="list-group">
+      {% for row in csv_data %}
+        <a class="list-group-item list-group-item-action" href="#quote{{ forloop.counter }}">{{ row.0 }}</a>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="col-8">
+    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+      {% for row in csv_data %}
+        <div class="card" id="quote{{ forloop.counter }}">
+          <div class="card-header">
+            <h2>{{ row.0 }}</h2>
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>{{ row.1|slice:":300" }}</p>
+              <span class="dots">...</span>
+              <span class="more" style="display: none;">{{ row.1|slice:"300:" }}{{ row.2 }}</span>
+              <button onclick="readMore('quote{{ forloop.counter }}')" class="myBtn">Read more</button>
+            </blockquote>
+          </div>
+        </div><br>
+      {% endfor %}
+    </div>
+  </div>
+</div> 
+
+{% endblock  %}
+

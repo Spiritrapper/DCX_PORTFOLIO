@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.community_1 {
+    font-family: 'TAEBAEKmilkyway';
+    background-color: rgba(84, 87, 100, 0.6);
+    padding: 0.2em;
+    border-radius: 0.2em;
+    color: white;
+    font-size: 35px;
+}

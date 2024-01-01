@@ -1,0 +1,56 @@
+{% load static%}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>회원가입</title>
+  <link rel="stylesheet" href="{% static '/css/register.css' %}">
+  <link rel="stylesheet" href="{% static '/css/main.css' %}">
+  <link rel="stylesheet" href="{% static '/css/navbar.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="https://fonts.cdnfonts.com/css/sleeping" rel="stylesheet">
+
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+
+    <!-- 회원가입 페이지 -->
+    <div class = "container text-white" id="register_page">
+        <br>
+        <h1 class = "text-center">register</h1>
+        <br>
+        <div class = "col-md-6 offset-md-3">
+            <form method = "POST" action="{% url 'account:register' %}">
+                {% csrf_token %}
+                {% if form.error %}
+                <div class="alert alert-secondary alert-warning alert-dismissible fade show" role="alert">
+                    <strong>error</strong> 
+                        {% for field in form %}
+                            {% if field.errors %}
+                                {{filed.errors}}
+                            {% endif %}
+                        {% endfor %}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                {% endif %}
+                </div>
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-secondary" id="register_button"> Welcome</button>
+                {% if messages %}
+                    {% for message in  messages %}
+                <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                    {{ message }}
+                <br>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+    {% endfor %}
+    {% endif %}  
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
