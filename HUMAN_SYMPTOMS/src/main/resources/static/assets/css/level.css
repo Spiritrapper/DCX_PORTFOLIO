@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+.lv_low {  /* 26 29  */
+   display: inline-block;
+   text-align: center;
+   width: 26px; /* 사각형의 가로 크기를 조절하세요. */
+   height: 29px; /* 사각형의 세로 크기를 조절하세요. */
+   font-weight: 800;
+}
+      /* 40 30  */
+.lv_high {
+   display: inline-block;
+   text-align: center;
+   width: 43px; /* 원의 지름을 설정하세요. */
+   height: 30px; /* 원의 높이를 설정하세요. (원이기 때문에 가로와 세로 크기는 같게 설정합니다.) */
+   
+   font-weight: 800;
+}
+
+.lv_1 {
+   background-image: url("../images/lv_1.png");
+   color: white;
+   background-size: cover;
+}
+
+.lv_2 {
+   background-image: url("../images/lv_2.png");
+   color: white;
+   background-size: cover;
+}
+
+.lv_3 {
+   background-image: url("../images/lv_3.png");
+
+   color: white;
+   background-size: cover;
+   
+}
+
+.lv_4 {
+   background-image: url("../images/lv_4.png");
+
+   color: white;
+   background-size: cover;
+}
+
+.lv_5 {
+   background-image: url("../images/lv_5.png");
+   color: white;
+   background-size: cover;
+}
+
+.lv_6 {
+   background-image: url("../images/lv_6.png");
+   color: white;
+   background-size: cover;
+}
+
+.lv_7 {
+   background-image: url("../images/lv_7.png");
+   color: white;
+   background-size: cover;
+}
+
+.lv_8 {
+   background-image: url("../images/lv_8.png");
+   color: white;
+   background-size: cover;
+}
+
+.lv_9 {
+   background-image: url("../images/lv_9.png");
+   color: white;
+   background-size: cover;
+}

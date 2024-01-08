@@ -1,0 +1,46 @@
+@charset "UTF-8";
+.bubble-container {
+    /* 화면 하단에 위치하도록 설정 */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* 넘치는 버블을 가림 */
+
+}
+
+.bubble {
+    /* 버블의 스타일 지정 */
+    width: 20px;
+    height: 20px;
+    
+    background: hsla(217, 100%, 50%, 1);
+    
+    border-radius: 50%;
+    position: absolute;
+    animation: riseAndDisappear 8s linear infinite;
+    opacity: 0; /* 초기에는 보이지 않음 */
+}
+
+@keyframes riseAndDisappear {
+    0% {
+        /* 버블이 아래에서 시작하여 완전히 투명함 */
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    10% {
+        /* 10%에서 투명도가 변화하기 시작함 */
+        opacity: 0.2;
+    }
+    90% {
+        /* 90%까지 투명도 유지 */
+        opacity: 0.2;
+    }
+    100% {
+        /* 화면 위로 올라가면서 다시 완전히 투명해짐 */
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}

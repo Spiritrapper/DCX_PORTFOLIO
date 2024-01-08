@@ -1,0 +1,428 @@
+
+ /* 차트1 그리드2 시작 */
+ 
+ #chartBtn0{        outline: 0;
+                    grid-gap: 8px;
+                    align-items: center;
+                    background: hsla(311, 74%, 87%, 1);
+                    color: #000;
+                    border: 1px solid #000;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    display: inline-flex;
+                    flex-shrink: 0;
+                    font-size: 10px;
+                    gap: 8px;
+                    justify-content: center;
+                    line-height: 1.5;
+                    overflow: hidden;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    text-overflow: ellipsis;
+                    transition: all .14s ease-out;
+                    white-space: nowrap;
+                    position: relative;
+                    bottom: 10px;
+ }
+                    
+ #chartBtn0:hover {
+                        box-shadow: 4px 4px 0 #000;
+                        transform: translate(-4px,-4px);
+                        background: hsla(11, 82%, 87%, 1);
+                    }
+#chartBtn0:focus-visible{
+                        outline-offset: 1px;
+                    }
+                    
+                    
+                    
+ #chartBtn1{        outline: 0;
+                    grid-gap: 8px;
+                    align-items: center;
+                    background: hsla(192, 95%, 50%, 1);
+                    color: #000;
+                    border: 1px solid #000;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    display: inline-flex;
+                    flex-shrink: 0;
+                    font-size: 10px;
+                    gap: 8px;
+                    justify-content: center;
+                    line-height: 1.5;
+                    overflow: hidden;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    text-overflow: ellipsis;
+                    transition: all .14s ease-out;
+                    white-space: nowrap;
+                    position: relative;
+                    bottom: 10px;
+ }
+                    
+ #chartBtn1:hover {
+                        box-shadow: 4px 4px 0 #000;
+                        transform: translate(-4px,-4px);
+                        background: hsla(159, 82%, 55%, 1);
+                    }
+#chartBtn1:focus-visible{
+                        outline-offset: 1px;
+                    }
+                    
+                    
+ #chartBtn2{        outline: 0;
+                    grid-gap: 8px;
+                    align-items: center;
+                    background: hsla(22, 100%, 78%, 1);
+                    color: #000;
+                    border: 1px solid #000;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    display: inline-flex;
+                    flex-shrink: 0;
+                    font-size: 10px;
+                    gap: 8px;
+                    justify-content: center;
+                    line-height: 1.5;
+                    overflow: hidden;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    text-overflow: ellipsis;
+                    transition: all .14s ease-out;
+                    white-space: nowrap;
+                    position: relative;
+                    bottom: 10px;
+ }
+                    
+ #chartBtn2:hover {
+                        box-shadow: 4px 4px 0 #000;
+                        transform: translate(-4px,-4px);
+                        background: hsla(41, 100%, 70%, 1);
+                    }
+#chartBtn2:focus-visible{
+                        outline-offset: 1px;
+                    }
+                    
+                    
+                    
+                    
+ #chartBtn3{        outline: 0;
+                    grid-gap: 8px;
+                    align-items: center;
+                    background: hsla(145, 84%, 73%, 1);
+                    color: #000;
+                    border: 1px solid #000;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    display: inline-flex;
+                    flex-shrink: 0;
+                    font-size: 10px;
+                    gap: 8px;
+                    justify-content: center;
+                    line-height: 1.5;
+                    overflow: hidden;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    text-overflow: ellipsis;
+                    transition: all .14s ease-out;
+                    white-space: nowrap;
+                    position: relative;
+                    bottom: 10px;
+ }
+                    
+ #chartBtn3:hover {
+                        box-shadow: 4px 4px 0 #000;
+                        transform: translate(-4px,-4px);
+                        background: hsla(175, 79%, 63%, 1);
+                    }
+#chartBtn3:focus-visible{
+                        outline-offset: 1px;
+                    }
+                    
+#chartBtn4{        outline: 0;
+                    grid-gap: 8px;
+                    align-items: center;
+                    background: hsla(270, 91%, 83%, 1);
+                    color: #000;
+                    border: 1px solid #000;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    display: inline-flex;
+                    flex-shrink: 0;
+                    font-size: 10px;
+                    gap: 8px;
+                    justify-content: center;
+                    line-height: 1.5;
+                    overflow: hidden;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    text-overflow: ellipsis;
+                    transition: all .14s ease-out;
+                    white-space: nowrap;
+                    position: relative;
+                    bottom: 10px;
+ }
+                    
+ #chartBtn4:hover {
+                        box-shadow: 4px 4px 0 #000;
+                        transform: translate(-4px,-4px);
+                        background: hsla(54, 56%, 66%, 1);
+                    }
+#chartBtn4:focus-visible{
+                        outline-offset: 1px;
+                    }                    
+                
+/* 차트1 그리드2 끝 */
+
+
+
+/* 차트2 그리드4 시작 */
+
+#chartBtn2_1{        outline: 0;
+                    grid-gap: 8px;
+                    align-items: center;
+                    background: hsla(192, 95%, 50%, 1);
+                    color: #000;
+                    border: 1px solid #000;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    display: inline-flex;
+                    flex-shrink: 0;
+                    font-size: 10px;
+                    gap: 8px;
+                    justify-content: center;
+                    line-height: 1.5;
+                    overflow: hidden;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    text-overflow: ellipsis;
+                    transition: all .14s ease-out;
+                    white-space: nowrap;
+                    position: relative;
+                    bottom: 10px;
+ }
+                    
+#chartBtn2_1:hover {
+                        box-shadow: 4px 4px 0 #000;
+                        transform: translate(-4px,-4px);
+                        background: hsla(41, 100%, 70%, 1);
+                    }
+#chartBtn2_1:focus-visible{
+                        outline-offset: 1px;
+                    } 
+                    
+#chartBtn2_2{        outline: 0;
+                    grid-gap: 8px;
+                    align-items: center;
+                    background: hsla(22, 100%, 78%, 1);
+                    color: #000;
+                    border: 1px solid #000;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    display: inline-flex;
+                    flex-shrink: 0;
+                    font-size: 10px;
+                    gap: 8px;
+                    justify-content: center;
+                    line-height: 1.5;
+                    overflow: hidden;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    text-overflow: ellipsis;
+                    transition: all .14s ease-out;
+                    white-space: nowrap;
+                    position: relative;
+                    bottom: 10px;
+ }
+                    
+#chartBtn2_2:hover {
+                        box-shadow: 4px 4px 0 #000;
+                        transform: translate(-4px,-4px);
+                        background: hsla(54, 56%, 66%, 1);
+                    }
+#chartBtn2_2:focus-visible{
+                        outline-offset: 1px;
+                    }
+                    
+                    
+
+#chartBtn2_3{        outline: 0;
+                    grid-gap: 8px;
+                    align-items: center;
+                    background: hsla(145, 84%, 73%, 1);
+                    color: #000;
+                    border: 1px solid #000;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    display: inline-flex;
+                    flex-shrink: 0;
+                    font-size: 10px;
+                    gap: 8px;
+                    justify-content: center;
+                    line-height: 1.5;
+                    overflow: hidden;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    text-overflow: ellipsis;
+                    transition: all .14s ease-out;
+                    white-space: nowrap;
+                    position: relative;
+                    bottom: 10px;
+ }
+                    
+#chartBtn2_3:hover {
+                        box-shadow: 4px 4px 0 #000;
+                        transform: translate(-4px,-4px);
+                        background: hsla(175, 79%, 63%, 1);
+                    }
+#chartBtn2_3:focus-visible{
+                        outline-offset: 1px;
+                    }
+
+
+
+
+
+
+#chartBtn2_4{        
+					outline: 0;
+                    grid-gap: 8px;
+                    align-items: center;
+                    background: hsla(270, 91%, 83%, 1);
+                    color: #000;
+                    border: 1px solid #000;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    display: inline-flex;
+                    flex-shrink: 0;
+                    font-size: 10px;
+                    gap: 8px;
+                    justify-content: center;
+                    line-height: 1.5;
+                    overflow: hidden;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    text-overflow: ellipsis;
+                    transition: all .14s ease-out;
+                    white-space: nowrap;
+                    position: relative;
+                    bottom: 10px;
+ }
+                    
+#chartBtn2_4:hover {
+                        box-shadow: 4px 4px 0 #000;
+                        transform: translate(-4px,-4px);
+                        background: hsla(54, 56%, 66%, 1);
+                    }
+#chartBtn2_4:focus-visible{
+                        outline-offset: 1px;
+					}
+
+
+#submitButton{        
+					outline: 0;
+                    grid-gap: 8px;
+                    align-items: center;
+                    background: hsla(120, 6%, 90%, 1);
+                    color: #000;
+                    border: 1px solid #000;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    display: inline-flex;
+                    flex-shrink: 0;
+                    font-size: 10px;
+                    gap: 8px;
+                    justify-content: center;
+                    line-height: 1.5;
+                    overflow: hidden;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    text-overflow: ellipsis;
+                    transition: all .14s ease-out;
+                    white-space: nowrap;
+                   
+ }
+                    
+#submitButton:hover {
+                        box-shadow: 4px 4px 0 #000;
+                        transform: translate(-4px,-4px);
+                        background: hsla(197, 14%, 57%, 1);
+                    }
+#submitButton:focus-visible{
+                        outline-offset: 1px;
+					}   
+
+
+/* 날짜조회 셀렉트 */
+select {
+  box-sizing: border-box;
+  width: 130px;
+  padding: 4px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+option {
+  padding: 4px;
+  font-size: 14px;
+  color: #fff;
+  background: #272822;
+}
+/* 달력  */
+.fc-header-toolbar {
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  
+.fc-day-sun a {
+  color: red;
+  text-decoration: none;
+}
+
+/* 토요일 날짜 파란색 */
+.fc-day-sat a {
+  color: blue;
+  text-decoration: none;
+}  
+
+/* Pie차트 */
+.chart_No3 {
+            max-width: 400px;
+            margin: 5px auto;
+            display: block;
+        }
+        
+        
+        
+/* pdf 버튼 */
+
+
+
+.pdf_btn{           display: inline-block;
+                    outline: 0;
+                    appearance: none;
+                    padding: 0px 12px;
+                    border: 0px solid transparent;
+                    border-radius: 4px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    background-color: rgb(9, 128, 76);
+                    box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px;
+                    color: rgb(255, 255, 255);
+                    font-size: 14px;
+                    font-weight: 400;
+                    height: 36px;
+                    transition: all 150ms ease-in-out 0s;
+}
+                    
+.pdf_btn:hover {
+                        color: rgb(255, 255, 255);
+                        background-color: rgb(17, 97, 73);
+                        box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px, rgb(195 231 202) 0px 0px 0px 3px;
+}
+
+
+                    
+                    
+                

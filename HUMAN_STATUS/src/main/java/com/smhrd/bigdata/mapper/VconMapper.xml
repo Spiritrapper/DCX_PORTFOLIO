@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smhrd.bigdata.mapper.VconMapper">
+
+<select id="search_vcon" resultType="com.smhrd.bigdata.entity.Vcon">select * from Tester2</select>
+
+<update id="input">UPDATE Tester2_name
+SET stt1 = #{stt1}, stt2 = #{stt2}, stt3 = #{stt3}, stt4 = #{stt4}
+WHERE st = 1;
+</update>
+
+<select id="search_vcon2" resultType="com.smhrd.bigdata.entity.Vcon">select * from Tester2_name</select>
+</mapper>

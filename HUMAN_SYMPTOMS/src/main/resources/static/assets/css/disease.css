@@ -1,0 +1,506 @@
+@charset "UTF-8";
+
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(icomoon.css);
+@import url(css/font-awesome.min.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(swiper.min.css);
+@import url(slick.css);
+@import url(jquery.fancybox.min.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Sen', sans-serif;
+    line-height: 1.80857;
+    font-weight: normal;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #212121;
+    text-decoration: none!important;
+    opacity: 1
+}
+
+button:focus {
+    outline: none;
+}
+
+ul,
+li,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+p {
+    margin: 20px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+a {
+    color: #222222;
+    text-decoration: none;
+    outline: none !important;
+}
+
+a,
+.btn {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ :focus {
+    outline: 0;
+}
+
+.paddind_bottom_0 {
+    padding-bottom: 0 !important;
+}
+
+.btn-custom {
+    margin-top: 20px;
+    background-color: transparent !important;
+    border: 2px solid #ddd;
+    padding: 12px 40px;
+    font-size: 16px;
+}
+
+.lead {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767676;
+    margin: 0;
+    padding: 0;
+}
+
+.form-control:focus {
+    border-color: #ffffff !important;
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
+.navbar-form input {
+    border: none !important;
+}
+
+.badge {
+    font-weight: 500;
+}
+
+blockquote {
+    margin: 20px 0 20px;
+    padding: 30px;
+}
+
+button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.full {
+    float: left;
+    width: 100%;
+}
+
+.layout_padding {
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+.padding_0 {
+    padding: 0px;
+}
+
+
+/* header section start */
+
+.header_section {
+    width: 100%;
+    float: left;
+    background: linear-gradient(90deg, #001431 50%, #f8f2e2 50%);
+    height: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
+.header_bg {
+    background: #fb6818;
+    border-bottom: 1px solid #ffffff;
+}
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.mr-auto,
+.mx-auto {
+    text-align: center;
+}
+
+.ml-auto,
+.mx-auto {
+    margin: 0 auto;
+}
+
+a.navbar-brand {
+    width: 24%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 3px 5px;
+    font-size: 16px;
+    color: #fefefd;
+    margin: 0px 6px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #fefefd;
+    border: 1px solid #fefefd;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fefefd;
+    border: 1px solid #fefefd;
+}
+
+.navbar-brand {
+    margin: 0px;
+    float: right;
+    width: 14%;
+}
+
+.navbar {
+    padding: 15px 15px;
+}
+
+.user_icon {
+    padding-right: 15px;
+}
+
+.login_bt {
+    width: 210px;
+}
+
+.login_bt ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.login_bt li a {
+    float: left;
+    font-size: 18px;
+    color: #001431;
+    text-transform: uppercase;
+    padding: 0px 0px 0px 50px;
+}
+
+.login_bt li a:hover {
+    color: #ffffff;
+}
+
+
+/* header section end */
+
+
+/* banner section start */
+
+.banner_section {
+    width: 100%;
+    float: left;
+    padding: 20px 0px;
+}
+
+.banner_taital_main {
+    width: 100%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+  
+}
+
+/* 질병명의 폰트 */
+.banner_taital {
+    width: 90%;
+    font-size: 40px;
+    color: #fefefd;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+/* 질병관련 정보의 폰트 */
+.banner_text {
+    width: 100%;
+    font-size: 16px;
+    color: #fefefd;
+    float: left;
+    padding-top: 10px;
+    margin: 0px;
+}
+
+.started_bt {
+    width: 170px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.started_bt a {
+    width: 100%;
+    float: left;
+    padding: 8px 10px;
+    color: #ffffff;
+    background-color: #e73232;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.started_bt a:hover {
+    color: #001431;
+    background-color: #ffffff;
+}
+
+.readmore_btn {
+    width: 170px;
+    float: left;
+    margin-top: 30px;
+}
+
+.readmore_btn a {
+    width: 100%;
+    float: left;
+    padding: 8px 10px;
+    color: #ffffff;
+    background-color: #e73232;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.readmore_btn a:hover {
+    color: #001431;
+    background-color: #ffffff;
+}
+
+.readmore_btn.active a {
+    color: #001431;
+    background-color: #ffffff;
+}
+
+.banner_img {
+    width: 58%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#banner_slider a.carousel-control-prev {
+    left: initial;
+    top: 180px;
+    right: -14px;
+    color: #ffffff;
+    background-color: #001431;
+}
+
+#banner_slider a.carousel-control-next {
+    right: -14px;
+    top: 120px;
+}
+
+#banner_slider .carousel-control-next,
+#banner_slider .carousel-control-prev {
+    width: 55px;
+    height: 55px;
+    background: #e73232;
+    opacity: 1;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#banner_slider .carousel-control-next:focus,
+#banner_slider .carousel-control-next:hover,
+#banner_slider .carousel-control-prev:focus,
+#banner_slider .carousel-control-prev:hover {
+    color: #ffffff;
+    background-color: #001431;
+}
+
+
+/* banner section end */
+
+
+/* box section start */
+
+.box_section {
+    width: 100%;
+    float: left;
+    position: relative;
+    top: 0px;
+}
+
+.online_box {
+    width: 100%;
+    display: flex;
+}
+
+.online_box_left {
+    width: 360px;
+    float: left;
+    background-color: #fefefd;
+    height: auto;
+    padding: 30px;
+    box-shadow: 0px 9px 15px 5px #ededed;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.online_box_main {
+    width: 100%;
+    display: flex;
+}
+
+.box_left {
+    width: auto;
+}
+
+.box_right {
+    width: 70%;
+    padding-left: 20px;
+}
+
+.right_arrow {
+    width: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #001431;
+    border-radius: 100%;
+    text-align: center;
+    padding: 7px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.book_text {
+    width: 100%;
+    font-size: 16px;
+    color: #e73232;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.appoinment_text {
+    width: 100%;
+    font-size: 20px;
+    color: #001431;
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+
+.online_box_left:hover {
+    background-color: #e73232;
+}
+
+.online_box_left:hover .book_text {
+    color: #ffffff;
+}
+
+.online_box_left:hover .appoinment_text {
+    color: #ffffff;
+}
+
+.online_box_left.active {
+    background-color: #e73232;
+}
+
+.online_box_left.active .book_text {
+    color: #ffffff;
+}
+
+.online_box_left.active .appoinment_text {
+    color: #ffffff;
+}
+
+/* 운동영상 크기 설정 */
+.ex_video {
+  width: 560px;
+  height: 315px;
+}
+
+/* 세부1의 제목 div */
+.detail_subject{
+	font-size: 23px;
+}
+
+/* 질병사진 사이즈 */
+.dis_part_img{
+	width: 150px;
+	height: 150px;
+	
+}

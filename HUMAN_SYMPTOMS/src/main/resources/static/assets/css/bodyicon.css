@@ -1,0 +1,479 @@
+@charset "UTF-8";
+/* 머리부위  */
+
+/* 아이콘 밑 대쉬보드 */
+
+
+
+
+
+.border_line1{
+	/* border-line:2px; */
+/* 	justify-content: center;
+ */	
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+	position: relative;
+	border: 1px  white;
+/* 	background-color:white; */
+	background-color: rgba(255, 255, 255, 0.7); /* 원하는 배경색과 투명도 조절 가능 */
+	margin: 40px 0 0 0;
+	height:80%;
+/* 	opacity:15%;  *//* 자식태에도 투명도적용됨 */
+	border-radius:15px;
+	box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5); /* 흰색 그림자를 추가 */
+	overflow: hidden;
+}
+
+/* .border_line1.active {
+	opacity:15%;
+  background-color: rgba(255, 255, 255, 0.7); 투명도 설정
+
+} */
+
+
+
+/* 머리1번 증상 */
+.symptom1_img1{
+	max-width: 70%;
+   background-color:white;
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(0.8)  transform 0.5s ease; /* 기본 크기(변화 없음) */
+  
+    border-radius: 15px; /* 50%로 설정하여 원 모양으로 만듭니다 */
+    overflow: hidden; /* 이미지가 원을 벗어나지 않도록 설정합니다 */
+    color:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 검은 그림자를 추가 */
+    
+    z-index: 1
+    
+}
+
+.symptom1_img1:hover{
+
+ 	background-color:#fb4620 ;
+
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(1.1) translateX(10%);
+	z-index: 2
+	
+}
+.symptom1_img2{
+	max-width: 80%;
+   background-color:white;
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(0.8)  transform 0.5s ease; /* 기본 크기(변화 없음) */
+  
+    border-radius: 15px; /* 50%로 설정하여 원 모양으로 만듭니다 */
+    overflow: hidden; /* 이미지가 원을 벗어나지 않도록 설정합니다 */
+    color:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 검은 그림자를 추가 */
+    z-index: 1
+    
+}
+
+.symptom1_img2:hover{
+
+  background-color:#fb4620;
+
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(1.1) translateX(10%);
+	z-index: 2
+	
+}
+.symptom1_img3{
+	max-width: 80%;
+   background-color:white;
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(0.8)  transform 0.5s ease; /* 기본 크기(변화 없음) */
+  
+    border-radius: 15px; /* 50%로 설정하여 원 모양으로 만듭니다 */
+    overflow: hidden; /* 이미지가 원을 벗어나지 않도록 설정합니다 */
+    color:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 검은 그림자를 추가 */
+    z-index: 1
+    
+}
+
+.symptom1_img3:hover{
+
+	background-color:#fb4620;
+
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(1.1) translateX(10%);
+	z-index: 2
+	
+}
+#symptom2_img1{
+	max-width: 80%;
+   background-color:white;
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(0.8)  transform 0.5s ease; /* 기본 크기(변화 없음) */
+  
+    border-radius: 15px; /* 50%로 설정하여 원 모양으로 만듭니다 */
+    overflow: hidden; /* 이미지가 원을 벗어나지 않도록 설정합니다 */
+    color:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 검은 그림자를 추가 */
+    z-index: 1
+    
+}
+
+#symptom2_img1:hover{
+
+	background-color:#fb4620;
+
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(1.1) translateX(10%);
+	z-index: 2
+	
+}
+#symptom2_img2{
+	max-width: 80%;
+   background-color:white;
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(0.8)  transform 0.5s ease; /* 기본 크기(변화 없음) */
+  
+    border-radius: 15px; /* 50%로 설정하여 원 모양으로 만듭니다 */
+    overflow: hidden; /* 이미지가 원을 벗어나지 않도록 설정합니다 */
+    color:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 검은 그림자를 추가 */
+    z-index: 1
+    
+}
+
+#symptom2_img2:hover{
+
+	background-color:#fb4620;
+
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(1.1) translateX(10%);
+	z-index: 2
+	
+}
+#symptom3_img1{
+	max-width: 80%;
+   background-color:white;
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(0.8)  transform 0.5s ease; /* 기본 크기(변화 없음) */
+  
+    border-radius: 15px; /* 50%로 설정하여 원 모양으로 만듭니다 */
+    overflow: hidden; /* 이미지가 원을 벗어나지 않도록 설정합니다 */
+    color:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 검은 그림자를 추가 */
+    z-index: 1
+    
+}
+
+#symptom3_img1:hover{
+
+	background-color:#fb4620;
+
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(1.1) translateX(10%);
+	z-index: 2
+	
+}
+#symptom3_img2{
+	max-width: 80%;
+   background-color:white;
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(0.8)  transform 0.5s ease; /* 기본 크기(변화 없음) */
+  
+    border-radius: 15px; /* 50%로 설정하여 원 모양으로 만듭니다 */
+    overflow: hidden; /* 이미지가 원을 벗어나지 않도록 설정합니다 */
+    color:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 검은 그림자를 추가 */
+    z-index: 1
+    
+}
+
+#symptom3_img2:hover{
+
+	background-color:#fb4620;
+
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(1.1) translateX(10%);
+	z-index: 2
+	
+}
+#symptom4_img1{
+	max-width: 80%;
+   background-color:white;
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(0.8)  transform 0.5s ease; /* 기본 크기(변화 없음) */
+  
+    border-radius: 15px; /* 50%로 설정하여 원 모양으로 만듭니다 */
+    overflow: hidden; /* 이미지가 원을 벗어나지 않도록 설정합니다 */
+    color:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 검은 그림자를 추가 */
+    z-index: 1
+    
+}
+
+#symptom4_img1:hover{
+
+	background-color:#fb4620;
+
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(1.1) translateX(10%);
+	z-index: 2
+	
+}
+#symptom4_img2{
+	max-width: 80%;
+   background-color:white;
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(0.8)  transform 0.5s ease; /* 기본 크기(변화 없음) */
+  
+    border-radius: 15px; /* 50%로 설정하여 원 모양으로 만듭니다 */
+    overflow: hidden; /* 이미지가 원을 벗어나지 않도록 설정합니다 */
+    color:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 검은 그림자를 추가 */
+    z-index: 1
+    
+}
+
+#symptom4_img2:hover{
+
+	background-color:#fb4620;
+
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(1.1) translateX(10%);
+	z-index: 2
+	
+}
+#symptom5_img1{
+	max-width: 80%;
+   background-color:white;
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(0.8)  transform 0.5s ease; /* 기본 크기(변화 없음) */
+  
+    border-radius: 15px; /* 50%로 설정하여 원 모양으로 만듭니다 */
+    overflow: hidden; /* 이미지가 원을 벗어나지 않도록 설정합니다 */
+    color:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 검은 그림자를 추가 */
+    z-index: 1
+    
+}
+
+#symptom5_img1:hover{
+
+	background-color:#fb4620;
+
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(1.1) translateX(10%);
+	z-index: 2
+	
+}
+#symptom5_img2{
+	max-width: 80%;
+   background-color:white;
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(0.8)  transform 0.5s ease; /* 기본 크기(변화 없음) */
+  
+    border-radius: 15px; /* 50%로 설정하여 원 모양으로 만듭니다 */
+    overflow: hidden; /* 이미지가 원을 벗어나지 않도록 설정합니다 */
+    color:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 검은 그림자를 추가 */
+    z-index: 1
+    
+}
+
+#symptom5_img2:hover{
+
+	background-color:#fb4620;
+
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(1.1) translateX(10%);
+	z-index: 2
+	
+}
+#symptom6_img1{
+	max-width: 80%;
+   background-color:white;
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(0.8)  transform 0.5s ease; /* 기본 크기(변화 없음) */
+  
+    border-radius: 15px; /* 50%로 설정하여 원 모양으로 만듭니다 */
+    overflow: hidden; /* 이미지가 원을 벗어나지 않도록 설정합니다 */
+    color:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 검은 그림자를 추가 */
+    z-index: 1
+    
+}
+
+#symptom6_img1:hover{
+
+	background-color:#fb4620;
+
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(1.1) translateX(10%);
+	z-index: 2
+	
+}
+#symptom6_img2{
+	max-width: 80%;
+   background-color:white;
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(0.8)  transform 0.5s ease; /* 기본 크기(변화 없음) */
+  
+    border-radius: 15px; /* 50%로 설정하여 원 모양으로 만듭니다 */
+    overflow: hidden; /* 이미지가 원을 벗어나지 않도록 설정합니다 */
+    color:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 검은 그림자를 추가 */
+    z-index: 1
+    
+}
+
+#symptom6_img2:hover{
+
+	background-color:#fb4620;
+
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(1.1) translateX(10%);
+	z-index: 2
+	
+}
+#symptom7_img1{
+	max-width: 80%;
+   background-color:white;
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(0.8)  transform 0.5s ease; /* 기본 크기(변화 없음) */
+  
+    border-radius: 15px; /* 50%로 설정하여 원 모양으로 만듭니다 */
+    overflow: hidden; /* 이미지가 원을 벗어나지 않도록 설정합니다 */
+    color:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 검은 그림자를 추가 */
+    z-index: 1
+    
+}
+
+#symptom7_img1:hover{
+
+	background-color:#fb4620;
+
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(1.1) translateX(10%);
+	z-index: 2
+	
+}
+#symptom7_img2{
+	max-width: 80%;
+   background-color:white;
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(0.8)  transform 0.5s ease; /* 기본 크기(변화 없음) */
+  
+    border-radius: 15px; /* 50%로 설정하여 원 모양으로 만듭니다 */
+    overflow: hidden; /* 이미지가 원을 벗어나지 않도록 설정합니다 */
+    color:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 검은 그림자를 추가 */
+    z-index: 1
+    
+}
+
+#symptom7_img2:hover{
+
+	background-color:#fb4620;
+
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(1.1) translateX(10%);
+	z-index: 2
+	
+}
+#symptom8_img1{
+	max-width: 80%;
+   background-color:white;
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(0.8)  transform 0.5s ease; /* 기본 크기(변화 없음) */
+  
+    border-radius: 15px; /* 50%로 설정하여 원 모양으로 만듭니다 */
+    overflow: hidden; /* 이미지가 원을 벗어나지 않도록 설정합니다 */
+    color:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 검은 그림자를 추가 */
+    z-index: 1
+    
+}
+
+#symptom8_img1:hover{
+
+	background-color:#fb4620;
+
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(1.1) translateX(10%);
+	z-index: 2
+	
+}
+#symptom8_img2{
+	max-width: 80%;
+   background-color:white;
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(0.8)  transform 0.5s ease; /* 기본 크기(변화 없음) */
+  
+    border-radius: 15px; /* 50%로 설정하여 원 모양으로 만듭니다 */
+    overflow: hidden; /* 이미지가 원을 벗어나지 않도록 설정합니다 */
+    color:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 검은 그림자를 추가 */
+    z-index: 1
+    
+}
+
+#symptom8_img2:hover{
+
+	background-color:#fb4620;
+
+	position: relative;
+	margin: 0 20px 0 0;
+	transform: scale(1.1) translateX(10%);
+	z-index: 2
+	
+}
+
+
+.symptom_text{
+	
+	font-size: 80%;
+}
+
+strong{
+	font-size: 130%;
+	margin:15px;
+}
+
+
+
+
+

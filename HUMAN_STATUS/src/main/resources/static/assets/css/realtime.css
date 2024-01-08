@@ -1,0 +1,90 @@
+.region-data .numberDisplay {
+    /* Font size is defined in the parent .numberDisplay class, so it's omitted here */
+    padding: 20px; /* Retain padding for visual space */
+    border: 3px solid #e1e1e1; /* Lighter border for a softer look */
+    border-radius: 12px; /* Consistent with .region-data for a cohesive design */
+    background-color: #f7f7f7; /* Light background for a modern, airy feel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: inline-block;
+    text-align: center;
+    width: 100%; /* Full width for responsiveness */
+    height: auto; /* Auto height to fit content */
+    vertical-align: middle;
+    line-height: normal; /* Default line height for clean alignment */
+    color: #333333; /* Dark grey text for readability and sophistication */
+}
+
+
+
+.region-data {
+    margin: 10px;
+    background-color: #f7f7f7; /* Light grey background */
+    border: 2px solid #e1e1e1; /* Slightly darker border for subtle contrast */
+    border-radius: 12px; /* Rounder corners for a softer look */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Smoother shadow for depth */
+}
+
+.numberDisplay {
+    font-size: 6em; /* Adjust font size as needed */
+    color: #333333; /* Dark grey for better readability and modern look */
+    padding: 10px 20px; /* Balanced padding */
+    background-color: transparent; /* No background for a clean look */
+    border: none; /* No border for a minimalist design */
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: auto; /* Adjust height automatically */
+    vertical-align: middle;
+    line-height: normal; /* Default line height for better control */
+}
+
+.warning-message {
+    color: #d9534f; /* Bootstrap 'btn-danger' color for consistency */
+    font-size: 1.25em; /* Slightly larger font size for emphasis */
+    margin-top: 20px; /* Space out from the number display */
+    font-weight: bold; /* Make the text bold to catch attention */
+    word-wrap: break-word; /* Ensure long text doesn't overflow */
+}
+
+
+/* 이름입력 */
+@font-face {
+    font-family: 'KNUTRUTHTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/KNUTRUTHTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.join_submit {
+ border: 1px dashed #ff0080;    /*---테두리 정의---*/
+background-Color:#ffe6f2;   /*--백그라운드 정의---*/
+font-family:'KNUTRUTHTTF';
+font:12px;      /*--폰트 정의---*/
+font-weight:bold;   /*--폰트 굵기---*/
+color:#ff0080;    /*--폰트 색깔---*/
+width:130;height:50;  /*--버튼 크기---*/
+}
+input {
+  /* width: 500px; */
+  height: 32px;
+  font-size: 15px;
+  border: 10;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  margin-bottom:10px;
+  
+  background-color: rgb(233, 233, 233);
+}
+
+
+#loginForm{
+   display: block;
+   align-content: center;
+   text-align: center;
+   justify-content: center;
+   position: relative;
+   top: 50px;
+}

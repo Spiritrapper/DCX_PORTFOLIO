@@ -1,0 +1,37 @@
+# 빌드 시스템 (빌드 백엔드) 지정
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+# 프로젝트 정보 작성
+[project]
+name = "pyloncli"    # 패키지 이름
+description = "Command Line Interface for Pylon Project"    # 패키지 간단 설명
+readme = "README.md"    # README.md 파일 경로
+requires-python = ">=3.8"    # 파이썬 최소 버전
+classifiers = [
+    'Environment :: Console',    # 실행환경 (GUI or Console)
+    'Operating System :: POSIX :: LINUX',    # 실행환경 (OS)
+    'Programming Language :: Python :: 3.8'    # 프로그래밍 언어와 버전
+]
+dynamic = ["version", "dependencies"]    # 동적 메타데이터 항목 정의
+
+[tool.setuptools.dynamic]    # 동적 메타데이터 상세 정의
+version = {file = ["VERSION"]}    # VERSION 파일에서 가져옴
+dependencies = {file = ["requirements.txt"]}    # requirements.txt에서 가져옴
+
+[tool.setuptools.packages.find]    # 패키지에 포함시킬 파일 경로
+where = ["."]    # pyproject.toml이 위치한 경로
+include = ["pyloncli*"]    # 하위의 pyloncli 경로는 포함
+exclude = ["tests"]    # 하위의 tests 경로는 제외
+
+[tool.setuptools.package-data]
+"*" = ["*.yml"]    # 설정 파일 (yml) 포함
+
+[project.scripts]    # 명령어로 실행하면 호출할 함수 정의 (entry_points와 동일)
+pyloncli="pyloncli.main:main"    # pyloncli 명령어는 pyloncli.main.py의 main 함수 호출
+
+[tool.pytest.ini_options]    # pytest 설정 (pytest.ini의 추가 설정)
+pythonpath = ["."]    # sys.path에 추가할 경로 (테스트할 모듈 기본 경로)
+testpaths = ["make_train_data"]    # 테스트 코드 경로
+addopts = ["--import-mode=importlib"]    # 테스트 코드를 import 하는 방식 정의

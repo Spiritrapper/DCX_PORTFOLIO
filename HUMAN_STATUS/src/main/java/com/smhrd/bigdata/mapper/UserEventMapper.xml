@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smhrd.bigdata.mapper.UserEventMapper">
+
+    <select id="getAllUserEvents" resultType="com.smhrd.bigdata.entity.UserEvent">
+        select * from Tester2
+    </select>
+    
+  <select id="getAllUserEvents1" resultType="com.smhrd.bigdata.entity.UserEvent">
+    SELECT * FROM UserEvents WHERE event_date = CURDATE()
+</select>
+	
+	<select id="getAllNumber" >SELECT st1 + st2 + st3 + st4 AS total FROM Tester2 ORDER BY timestamp2 DESC LIMIT 1;</select>
+
+</mapper>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+
+    <title>Detection</title>
+    <style>
+      body {
+        background-color: #e4e4e4;
+        min-height: 100vh;
+        font-family: "Poppins";
+      }
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .button37 {
+        background-color: #0d02a5;
+        border: 1px solid #0d02a5;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        font-family: "Akzidenz Grotesk BQ Medium", -apple-system,
+          BlinkMacSystemFont, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        outline: none;
+        outline: 0;
+        padding: 10px 25px;
+        text-align: center;
+        transform: translateY(0);
+        transition: transform 150ms, box-shadow 150ms;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      .button37:hover {
+        box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+        transform: translateY(-2px);
+      }
+
+      .sHead {
+        font-weight: 600;
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+        color: #000e34;
+      }
+
+      .t-a-c {
+        text-align: center;
+      }
+
+      .formInput {
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+        color: #333333;
+        width: 100%;
+        border: 1px solid #102e81;
+        border-radius: 4px;
+        background-color: #f2f4f6;
+      }
+
+      .formCard {
+        background: #f4f4f4;
+        box-shadow: 26px 60px 39px rgba(33, 40, 47, 0.02),
+          12px 27px 29px rgba(33, 40, 47, 0.03),
+          3px 7px 16px rgba(33, 40, 47, 0.03),
+          0px 0px 0px rgba(33, 40, 47, 0.03);
+        border-radius: 8px;
+        padding: 2vw;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body class="center">
+    <div class="formCard">
+      <h1>Driver Drowsiness Detection</h1>
+      <form action="submit" method="POST">
+        <label for="name" class="sHead">name:</label>
+        <input type="text" name="name" class="formInput" />
+        <br />
+        <br />
+        <label for="dest" class="sHead">Destination:</label>
+        <input type="text" name="dest" class="formInput" />
+        <br />
+        <br />
+        <div class="center">
+          <input type="submit" value="Submit" class="button37" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

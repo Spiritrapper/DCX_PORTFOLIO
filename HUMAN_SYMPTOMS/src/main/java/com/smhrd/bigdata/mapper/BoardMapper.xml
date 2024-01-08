@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smhrd.bigdata.mapper.BoardMapper">
+
+	<insert id="write" parameterType="com.smhrd.bigdata.entity.Board">INSERT INTO t_board(board_title, board_content, created_at, id, dis_part) VALUES(#{board_title},#{board_content},NOW(),#{id},#{dis_part})</insert>
+
+	<select id="content" resultType="com.smhrd.bigdata.entity.Board">select * from t_board where board_idx=#{board_idx}</select>
+
+	<!-- <select id="boardList" resultType="com.smhrd.bigdata.entity.Board">select * from t_board order by board_idx desc</select> -->
+	<select id="boardList" resultType="com.smhrd.bigdata.entity.Board">SELECT * FROM (
+	    SELECT @rownum := @rownum + 1 AS RN, A.* 
+	    FROM (
+	        SELECT * 
+	        FROM t_board 
+	        ORDER BY board_idx DESC
+	    ) A, (SELECT @rownum := 0) r
+	) AS subquery WHERE RN BETWEEN #{start} AND #{end}</select>
+	
+	<update id="incrementViews">update t_board set board_views = board_views + 1 where board_idx = #{board_idx}</update>
+	
+	<insert id="recommend">insert into t_recommend(board_idx, id, reco_at) values(#{idx}, #{memberId}, NOW())</insert>
+
+	<select id="recommendCheck" resultType="int">select count(*) from t_recommend where board_idx = #{idx} and id = #{memberId}</select>
+	
+	<delete id="recommendCancel">delete from t_recommend where board_idx = #{idx} and id = #{memberId}</delete>
+	
+	<select id="recommendCount" resultType="int">select board_recommends from t_board where board_idx = #{idx}</select>
+	
+	<update id="updateRecommendCount">update t_board set board_recommends = (select count(*) from t_recommend where board_idx = #{idx}) where board_idx = #{idx}</update>
+	
+	<delete id="delete">delete from t_board where board_idx = #{idx}</delete>
+	
+	<!-- <select id="search" resultType="com.smhrd.bigdata.entity.Board">select * from t_board where board_title like '%'||#{search}||'%' or board_content like '%'||#{search}||'%'</select> -->
+	<!-- 이거 작동 안함 -->
+	
+	<!-- <select id="search" resultType="com.smhrd.bigdata.entity.Board">select * from t_board WHERE (board_title LIKE CONCAT('%', #{search}, '%') OR board_content LIKE CONCAT('%', #{search}, '%')) and dis_part LIKE CONCAT('%', #{dis_part}, '%') order by board_idx desc</select>
+	
+	<select id="search_comments" resultType="com.smhrd.bigdata.entity.Board">select * from t_board WHERE (board_title LIKE CONCAT('%', #{search}, '%') OR board_content LIKE CONCAT('%', #{search}, '%')) and dis_part LIKE CONCAT('%', #{dis_part}, '%') order by board_comments desc, board_idx desc</select>
+	
+	<select id="search_recommends" resultType="com.smhrd.bigdata.entity.Board">select * from t_board WHERE (board_title LIKE CONCAT('%', #{search}, '%') OR board_content LIKE CONCAT('%', #{search}, '%')) and dis_part LIKE CONCAT('%', #{dis_part}, '%') order by board_recommends desc, board_idx desc</select>
+	
+	<select id="search_views" resultType="com.smhrd.bigdata.entity.Board">select * from t_board WHERE (board_title LIKE CONCAT('%', #{search}, '%') OR board_content LIKE CONCAT('%', #{search}, '%')) and dis_part LIKE CONCAT('%', #{dis_part}, '%') order by board_views desc, board_idx desc</select> -->
+	
+	<select id="search" resultType="com.smhrd.bigdata.entity.Board">SELECT * FROM (SELECT @rownum := @rownum + 1 AS RN, A.* FROM (select * from t_board WHERE (board_title LIKE CONCAT('%', #{search}, '%') OR board_content LIKE CONCAT('%', #{search}, '%')) and dis_part LIKE CONCAT('%', #{dis_part}, '%') order by board_idx desc) A, (SELECT @rownum := 0) r) AS subquery WHERE RN BETWEEN #{start} AND #{end}</select>
+	
+	<select id="search_comments" resultType="com.smhrd.bigdata.entity.Board">SELECT * FROM (SELECT @rownum := @rownum + 1 AS RN, A.* FROM (select * from t_board WHERE (board_title LIKE CONCAT('%', #{search}, '%') OR board_content LIKE CONCAT('%', #{search}, '%')) and dis_part LIKE CONCAT('%', #{dis_part}, '%') order by board_comments desc, board_idx desc) A, (SELECT @rownum := 0) r) AS subquery WHERE RN BETWEEN #{start} AND #{end}</select>
+	
+	<select id="search_recommends" resultType="com.smhrd.bigdata.entity.Board">SELECT * FROM (SELECT @rownum := @rownum + 1 AS RN, A.* FROM (select * from t_board WHERE (board_title LIKE CONCAT('%', #{search}, '%') OR board_content LIKE CONCAT('%', #{search}, '%')) and dis_part LIKE CONCAT('%', #{dis_part}, '%') order by board_recommends desc, board_idx desc) A, (SELECT @rownum := 0) r) AS subquery WHERE RN BETWEEN #{start} AND #{end}</select>
+	
+	<select id="search_views" resultType="com.smhrd.bigdata.entity.Board">SELECT * FROM (SELECT @rownum := @rownum + 1 AS RN, A.* FROM (select * from t_board WHERE (board_title LIKE CONCAT('%', #{search}, '%') OR board_content LIKE CONCAT('%', #{search}, '%')) and dis_part LIKE CONCAT('%', #{dis_part}, '%') order by board_views desc, board_idx desc) A, (SELECT @rownum := 0) r) AS subquery WHERE RN BETWEEN #{start} AND #{end}</select>
+	
+	<insert id="addComment">insert into t_comment(board_idx, cmt_content, created_at, id) values(#{idx}, #{comment}, NOW(), #{memberId})</insert>
+	
+	<select id="showComment" resultType="com.smhrd.bigdata.entity.Comment">select * from t_comment where board_idx = #{idx}</select>
+	
+	<delete id="deleteComment">delete from t_comment where cmt_idx = #{idx} </delete>
+	
+	<select id="commentCount" parameterType="int">select count(*) from t_comment where board_idx = #{idx}</select>
+	
+	<update id="updateCommentCount">update t_board set board_comments = (select count(*) from t_comment where board_idx = #{idx}) where board_idx = #{idx}</update>
+	
+	<!-- 총 게시글 갯수 출력 -->
+	<select id="countBoard" resultType="int">SELECT COUNT(*) FROM t_board </select>
+	
+	<select id="countBoard2" resultType="int">SELECT COUNT(*) FROM t_board WHERE (board_title LIKE CONCAT('%', #{search}, '%') OR board_content LIKE CONCAT('%', #{search}, '%')) and dis_part LIKE CONCAT('%', #{dis_part}, '%')</select>
+	
+	<!-- 페이징 처리 후 게시글 조회 -->
+	<select id="selectBoard" resultType="com.smhrd.bigdata.entity.Board">SELECT * FROM (
+    SELECT @rownum := @rownum + 1 AS RN, A.* 
+    FROM (
+        SELECT * 
+        FROM t_board 
+        ORDER BY board_idx DESC
+    ) A, (SELECT @rownum := 0) r
+) AS subquery WHERE RN BETWEEN #{start} AND #{end}</select>
+
+	<update id="updateExp">update t_user set exp = (select 10 * count(*) from t_comment where id = #{memberId}) + (select 20 * count(*) from t_board where id = #{memberId}) + (select 50 * count(*) from t_recommend where id = #{memberId}) where id = #{memberId}</update>
+	
+	<select id="selectBoardId" resultType="String">select id from t_board where board_idx = #{idx}</select>
+	<update id="updateLevel">update t_board set id_level = FLOOR((select exp from t_user where id = #{id})/100) + 1 where id = #{id}</update>
+	
+</mapper>

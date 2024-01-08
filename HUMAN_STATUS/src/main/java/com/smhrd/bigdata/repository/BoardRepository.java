@@ -1,0 +1,7 @@
+package com.smhrd.bigdata.repository;
+
+import com.smhrd.bigdata.entity.Board;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BoardRepository extends JpaRepository<Board, Long> {
+}
